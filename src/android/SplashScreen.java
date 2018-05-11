@@ -172,6 +172,18 @@ public class SplashScreen extends CordovaPlugin {
                     webView.postMessage("splashscreen", "show");
                 }
             });
+        } else if (action.equals("show_spinner")) {
+            cordova.getActivity().runOnUiThread(new Runnable() {
+                public void run() {
+                    webView.postMessage("splashscreen", "show_spinner");
+                }
+            });
+        } else if (action.equals("hide_spinner")) {
+            cordova.getActivity().runOnUiThread(new Runnable() {
+                public void run() {
+                    webView.postMessage("splashscreen", "hide_spinner");
+                }
+            });
         } else {
             return false;
         }
@@ -188,6 +200,10 @@ public class SplashScreen extends CordovaPlugin {
         if ("splashscreen".equals(id)) {
             if ("hide".equals(data.toString())) {
                 this.removeSplashScreen(false);
+            } else if ("hide_spinner".equals(data.toString())) {
+                getView().setVisibility(View.VISIBLE);
+            } else if ("show_spinner".equals(data.toString())) {
+                this.spinnerStart();
             } else {
                 this.showSplashScreen(false);
             }
