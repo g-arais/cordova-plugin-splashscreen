@@ -19,10 +19,10 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-splashscreen"
+           id="cordova-plugin-unosplashscreen"
       version="5.0.3-dev">
-    <name>Splashscreen</name>
-    <description>Cordova Splashscreen Plugin</description>
+    <name>UNOSplashscreen</name>
+    <description>Cordova UNO Splashscreen Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,splashscreen</keywords>
     <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-splashscreen.git</repo>
