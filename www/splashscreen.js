@@ -27,6 +27,12 @@ var splashscreen = {
     },
     hide:function() {
         exec(null, null, "SplashScreen", "hide", []);
+    },
+    show_spinner:function() {
+        exec(null, null, "Spinner", "show", []);
+    },
+    hide_spinner:function() {
+        exec(null, null, "Spinner", "hide", []);
     }
 };
 
