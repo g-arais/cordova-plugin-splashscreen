@@ -29,10 +29,10 @@ var splashscreen = {
         exec(null, null, "SplashScreen", "hide", []);
     },
     show_spinner:function() {
-        exec(null, null, "Spinner", "show", []);
+        exec(null, null, "SplashScreen", "show", []);
     },
     hide_spinner:function() {
-        exec(null, null, "Spinner", "hide", []);
+        exec(null, null, "SplashScreen", "hide", []);
     }
 };
 
