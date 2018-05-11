@@ -201,7 +201,7 @@ public class SplashScreen extends CordovaPlugin {
             if ("hide".equals(data.toString())) {
                 this.removeSplashScreen(false);
             } else if ("hide_spinner".equals(data.toString())) {
-                getView().setVisibility(View.VISIBLE);
+                this.spinnerStop();
             } else if ("show_spinner".equals(data.toString())) {
                 this.spinnerStart();
             } else {
